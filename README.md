@@ -16,6 +16,7 @@ Things I tried that did not work:
 * running strace on the graphene-sgx process (maybe I didn't understand how to use the output to figure out the problem)
 * checked htop to see if the CPU is doing work when the process hangs.  It is not.
 * setting "insecure__allow_eventfd" to false, which stops the app from running at all.
+* tried making nodes not talk to themselves (via http), and only talk to other nodes.  This does nothing.
 
 ## Prereqs
 You may need to install the "concurrently" binary via npm with "npm i -g concurrently" to use the launch scripts.  You can also avoid this by manually running the following commands instead of using the launch scripts:
